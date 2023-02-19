@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:meal_app/pages/category_meals_screen.dart';
 import 'package:meal_app/pages/filters_screen.dart';
 
 class MainDrawer extends StatelessWidget {
@@ -44,7 +43,7 @@ class MainDrawer extends StatelessWidget {
               ),
             ),
             onTap: () {
-              Navigator.pushNamed(
+              Navigator.pushReplacementNamed(
                 context,
                 '/',
               );
@@ -66,7 +65,7 @@ class MainDrawer extends StatelessWidget {
               ),
             ),
             onTap: () {
-              Navigator.pushNamed(
+              Navigator.pushReplacementNamed(
                 context,
                 FiltersScreen.routeName,
               );
